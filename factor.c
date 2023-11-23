@@ -25,9 +25,9 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while((line = getline(&buffer, &count, fptr)) != -1)
+	while ((line = getline(&buffer, &count, fptr)) != -1)
 	{
 		factorize(buffer);
 	}
-return (0);
+	return (0);
 }
